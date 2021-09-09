@@ -15,12 +15,46 @@ $email_address = strip_tags(htmlspecialchars($_POST['email']));
 $phone = strip_tags(htmlspecialchars($_POST['phone']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
    
-// Create the email and send the message
-$to = 'andrestheperez@gmail.com'; // Add your email address in between the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
-$email_subject = "Website Contact Form:  $name";
-$email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
-$headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
-$headers .= "Reply-To: $email_address";   
-mail($to,$email_subject,$email_body,$headers);
+require "../../phpmailer/includes/PHPMailer.php";
+require "../../phpmailer/includes/SMTP.php";
+require "../../phpmailer/includes/Exception.php";
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+$mail = new PHPMailer();
+
+$mail->isSMTP();
+
+$mail->Host = "smtp.gmail.com";
+
+$mail->SMTPAuth = true;
+
+$mail->SMTPSecure = "tls";
+
+$mail->Port = "587";
+
+$mail->Username = "";
+
+$mail->Password = "";
+
+$mail->Subject = "New Contact Us Request from www.perezkittens.com";
+
+$mail->setFrom("");
+
+$mail->isHTML(true);
+
+$mail->Body = "<p><h1>Name: </h1> ".$name."</p><br><p><h1>Email: </h1> ".$email_address."</p><br><p><h1>Phone: </h1> ".$phone."</p><br><p><h1>Message: </h1> ".$message."</p><br>";
+
+$mail->addAddress("");
+
+if ( $mail->Send() ) {
+   echo "Email Sent..!";
+} else {
+   Echo "error";
+}
+
+$mail->smtpClose();
 return true;         
 ?>
