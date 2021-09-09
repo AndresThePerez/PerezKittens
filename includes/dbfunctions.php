@@ -9,7 +9,6 @@ function getKats() {
         $row = mysqli_fetch_all($result, MYSQLI_ASSOC);
     }
 
-    print_r($row);
     return $row;
 
 }
