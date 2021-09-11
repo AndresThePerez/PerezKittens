@@ -37,6 +37,7 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#meet-parents">Meet The Parents</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#available-kittens">Available Kittens</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://www.facebook.com/perezkittens">Facebook</a></li>
                     </ul>
                 </div>
             </div>
@@ -49,7 +50,6 @@
                 <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#available-kittens">View Available Kittens</a>
             </div>
         </header>
-
         <!-- Team-->
         <section class="page-section bg-light" id="meet-parents">
             <div class="container">
@@ -72,9 +72,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
-                </div> -->
             </div>
         </section>
         <!-- available-kittens Grid-->
@@ -158,6 +155,19 @@
                 </form>
             </div>
         </section>
+
+        <div class="bg-light pre-footer">
+            <div class="container bg-light">
+                    <div class="text-center">
+                        <h2 class="section-heading text-uppercase">Contact Information</h2>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-muted">Email: perezkittens@gmail.com</p>
+                        <p class="text-muted">Phone Number: (214)-901-6085</p>
+                    </div>
+            </div>
+        </div>
+
         <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">
