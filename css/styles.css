@@ -10103,7 +10103,7 @@ header.masthead {
   text-align: center;
   color: #fff;
   /* background-image: url("../assets/img/Thinking-of-getting-a-cat.png"); */
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../assets/img/IMG_6770 (2).jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../assets/img/image7.jpeg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10127,7 +10127,7 @@ header.masthead .masthead-heading {
 
 @media (min-width: 768px) {
   header.masthead {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../assets/img/IMG_6770.jpg");
+    /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../assets/img/image4.jpeg"); */
     padding-top: 17rem;
     padding-bottom: 12.5rem;
   }
