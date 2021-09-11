@@ -10475,6 +10475,10 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: #ced4da;
 }
 
+.pre-footer {
+  padding: 6rem 0;
+}
+
 .footer {
   text-align: center;
   font-size: 0.9rem;
