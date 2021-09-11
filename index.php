@@ -191,11 +191,11 @@
                                     <img class="img-fluid d-block mx-auto" src="<?php echo $entry['picture_dir']; ?>" alt="" />
                                     <p><?php echo $entry['description']; ?></p>
                                     <ul class="list-inline">
-                                        <li>Date of Birth: <?php $entry['dob'] ?></li>
+                                        <li>Date of Birth: <?php echo $entry['dob'] ?></li>
                                     </ul>
                                     <button class="btn btn-primary" data-dismiss="modal" type="button">
                                         <i class="fas fa-times mr-1"></i>
-                                        Close Project
+                                        Close
                                     </button>
                                 </div>
                             </div>
