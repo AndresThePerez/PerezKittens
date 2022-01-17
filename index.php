@@ -79,6 +79,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Available Kittens</h2>
+                    <p class="section-subheading text-muted">To reserve a kitten a $500 deposit is required</p>
                 </div>
 
                 <?php
